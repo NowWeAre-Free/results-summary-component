@@ -1,0 +1,6 @@
+@use './var' as *;
+
+.result {
+    background: linear-gradient(to bottom, $light-slate-blue-bg, $light-royal-blue-bg);
+    color: $white;
+}

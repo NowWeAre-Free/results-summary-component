@@ -1,3 +1,7 @@
 @use './reset';
 @use './var' as *;
+@use './mixins';
+@use './main';
+@use './card';
+@use './result';
 

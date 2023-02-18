@@ -1,0 +1,6 @@
+@use './var' as *;
+
+.main {
+    font-family: $f-family;
+    min-height: 100vh;
+}

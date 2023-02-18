@@ -6,72 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet"> 
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Results summary component</title>
 </head>
 
 <body>
   <main class="main">
     <article class="card">
-      <div class="card__result">
-        <h1 class="card__result-header">Your Result</h1>
-        <div class="card__result-score">
-          <p class="card__result-score--value">76</p>
-          <p class="card__result-score--max">of 100</p>
+      <div class="result">
+        <h1 class="result__header">Your Result</h1>
+        <div class="result__score">
+          <p class="result__score--value">76</p>
+          <p class="result__score--max">of 100</p>
         </div>
-        <div class="card__result-description">
-          <h2 class="card__result-description--title">Great</h2>
-          <p class="card__result-description--text">You scored higher than 65% of the people who have taken these tests.</p>
+        <div class="result__description">
+          <h2 class="result__description--title">Great</h2>
+          <p class="result__description--text">You scored higher than 65% of the people who have taken these tests.</p>
         </div>
       </div>
-      <div class="card__summary">
+      <div class="summary">
 
-        <h3 class="card_summary-title">Summary</h3>
+        <h3 class="summary__title">Summary</h3>
 
-        <div class="card__reaction">
-          <div class="card__reaction-left">
-            <img class="card__reaction-left--img" src="/assets/images/icon-reaction.svg" aria-hidden="true">
-            <p class="card__reaction-left--label">Reaction</p>
+        <div class="reaction">
+          <div class="reaction__left">
+            <img class="reaction__left--img" src="/assets/images/icon-reaction.svg" aria-hidden="true">
+            <p class="reaction__left--label">Reaction</p>
           </div>
-          <p class="card__reaction-left"><span>80</span> / 100</p>
+          <p class=""><span class="">80</span> / 100</p>
         </div>
 
-        <div class="card__memory">
-          <div class="card__memory-left">
-            <img src="/assets/images/icon-memory.svg" aria-hidden="true">
-            <p>Memory</p>
+        <div class="memory">
+          <div class="memory__left">
+            <img class="memory__left--img" src="/assets/images/icon-memory.svg" aria-hidden="true">
+            <p class="memory__left--label">Memory</p>
           </div>
-          <p><span>92</span> / 100</p>
+          <p class=""><span class="">92</span> / 100</p>
         </div>
 
         <div class="verbal">
           <div class="verbal__left">
-            <img src="/assets/images/icon-verbal.svg" aria-hidden="true">
-            <p>Verbal</p>
+            <img class="verbal__left--img" src="/assets/images/icon-verbal.svg" aria-hidden="true">
+            <p class="verbal__left--label">Verbal</p>
           </div>
-          <p><span>61</span> / 100</p>
+          <p class=""><span class="">61</span> / 100</p>
         </div>
 
         <div class="visual">
           <div class="visual__left">
-            <img src="/assets/images/icon-visual.svg" aria-hidden="true">
-            <p>Visual</p>
+            <img class="visual__left--img" src="/assets/images/icon-visual.svg" aria-hidden="true">
+            <p class="visual__left--label">Visual</p>
           </div>
-          <p><span>72</span> / 100</p>
+          <p class=""><span class="">72</span> / 100</p>
         </div>
 
-        <a href="#">Continue</a>
+        <a href="#" class="">Continue</a>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
       </div>
     </article>
   </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>

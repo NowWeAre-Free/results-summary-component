@@ -72,6 +72,7 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .result__header {
   color: hsl(241deg, 100%, 89%);
@@ -85,18 +86,33 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 .result__score--value {
-  font-size: 38px;
+  font-size: 48px;
   font-weight: 800;
 }
 .result__score--max {
   font-size: 14px;
   color: hsl(241deg, 100%, 89%);
+}
+.result__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result__description--title {
+  font-size: 22px;
+}
+.result__description--text {
+  text-align: center;
+  margin: 0.2rem 2.4rem 1.8rem 2.4rem;
+  color: hsl(241deg, 100%, 89%);
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

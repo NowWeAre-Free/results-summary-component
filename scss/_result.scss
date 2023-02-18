@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     &__header {
         color: $light-lavender;
         font-size: 18px;
@@ -20,17 +21,32 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         line-height: 1.2;
         margin-bottom: 1rem;
         &--value {
-            font-size: 38px;
+            font-size: 48px;
             font-weight: $fw800;
         }
         &--max {
             font-size: 14px;
             color: $light-lavender;
+        }
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--title {
+            font-size: 22px;
+        }
+        &--text {
+            text-align: center;
+            margin: .2rem 2.4rem 1.8rem 2.4rem;
+            color: $light-lavender;
+            font-size: 16px;
         }
     }
 }

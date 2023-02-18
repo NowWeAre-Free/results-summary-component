@@ -3,4 +3,19 @@
 .result {
     background: linear-gradient(to bottom, $light-slate-blue-bg, $light-royal-blue-bg);
     color: $white;
+    border-radius: 0 0 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__header {
+        color: $light-lavender;
+        font-size: 18px;
+    }
+    &__score {
+        background: linear-gradient(to bottom, $violet-blue-circle, $persian-blue-circle);
+        border-radius: 50%;
+        padding: 1.5rem;
+        text-align: center;
+    }
 }

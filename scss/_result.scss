@@ -1,13 +1,11 @@
 @use './var' as *;
+@use './mixins' as *;
 
 .result {
+    @include flex-center;
     background: linear-gradient(to bottom, $light-slate-blue-bg, $light-royal-blue-bg);
     color: $white;
     border-radius: 0 0 1.5rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     &__header {
         color: $light-lavender;

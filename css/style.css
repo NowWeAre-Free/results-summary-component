@@ -76,7 +76,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .result__header {
   color: hsl(241deg, 100%, 89%);
-  font-size: 18px;
+  font-size: 16px;
   margin: 1rem 0;
 }
 .result__score {
@@ -106,13 +106,13 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .result__description--title {
-  font-size: 22px;
+  font-size: 20px;
 }
 .result__description--text {
   text-align: center;
-  margin: 0.2rem 2.4rem 1.8rem 2.4rem;
+  margin: 0.2rem 3rem 1.8rem 3rem;
   color: hsl(241deg, 100%, 89%);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

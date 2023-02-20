@@ -4,3 +4,11 @@
     justify-content: center;
     align-items: center;
 }
+
+$breakPoints:("small": 450px);
+
+@mixin breakPoint($value) {
+    @media (min-width: map-get($map:$breakPoints, $key:$value)) {
+        @content;
+    }
+}

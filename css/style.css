@@ -129,5 +129,24 @@ p, h1, h2, h3, h4, h5, h6 {
 .summary__title {
   padding: 0 0 1.2em 0;
 }
+.summary__box {
+  border-radius: 0.6em;
+}
+
+.reaction {
+  background-color: hsla(0deg, 100%, 67%, 0.06);
+}
+
+.memory {
+  background-color: hsla(39deg, 100%, 56%, 0.06);
+}
+
+.verbal {
+  background-color: hsla(166deg, 100%, 37%, 0.06);
+}
+
+.visual {
+  background-color: hsla(234deg, 85%, 45%, 0.06);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,26 @@
+@use './var' as *;
+
 .summary {
     padding: 1.5em;
     &__title {
         padding: 0 0 1.2em 0;
     }
+    &__box {
+        border-radius: 0.6em;
+    }
 }
+.reaction {
+    background-color: hsla(hue($red), saturation($red), lightness($red), 0.06);
+}
+.memory {
+    background-color: hsla(hue($yellow), saturation($yellow), lightness($yellow), 0.06);
+}
+
+.verbal {
+    background-color: hsla(hue($green), saturation($green), lightness($green), 0.06);
+}
+
+.visual {
+    background-color: hsla(hue($blue), saturation($blue), lightness($blue), 0.06);
+}
+

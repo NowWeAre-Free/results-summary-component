@@ -132,29 +132,49 @@ p, h1, h2, h3, h4, h5, h6 {
 .summary__box {
   border-radius: 0.6em;
   margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em;
+}
+.summary__box--flex {
+  display: flex;
+  gap: 10px;
 }
 .summary__score {
   font-weight: 700;
 }
 .summary__score--max {
   font-weight: 500;
-  color: hsl(241deg, 100%, 89%);
+  color: gray;
 }
 
 .reaction {
-  background-color: hsla(0deg, 100%, 67%, 0.06);
+  background-color: hsla(0deg, 100%, 67%, 0.1);
+}
+.reaction__left-label {
+  color: hsl(0deg, 100%, 67%);
 }
 
 .memory {
-  background-color: hsla(39deg, 100%, 56%, 0.06);
+  background-color: hsla(39deg, 100%, 56%, 0.1);
+}
+.memory__left-label {
+  color: hsl(39deg, 100%, 56%);
 }
 
 .verbal {
-  background-color: hsla(166deg, 100%, 37%, 0.06);
+  background-color: hsla(166deg, 100%, 37%, 0.1);
+}
+.verbal__left-label {
+  color: hsl(166deg, 100%, 37%);
 }
 
 .visual {
-  background-color: hsla(234deg, 85%, 45%, 0.06);
+  background-color: hsla(234deg, 85%, 45%, 0.1);
+}
+.visual__left-label {
+  color: hsl(234deg, 85%, 45%);
 }
 
 /*# sourceMappingURL=style.css.map */

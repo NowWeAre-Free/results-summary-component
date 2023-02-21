@@ -20,21 +20,21 @@
         height: 120px;
         line-height: 1.2;
         margin-bottom: 1rem;
-        &--value {
+        &-value {
             font-size: 48px;
             font-weight: $fw800;
         }
-        &--max {
+        &-max {
             font-size: 14px;
             color: $light-lavender;
         }
     }
     &__description {
         @include flex-center;
-        &--title {
+        &-title {
             font-size: 20px;
         }
-        &--text {
+        &-text {
             text-align: center;
             margin: .2rem 3rem 1.8rem 3rem;
             color: $light-lavender;

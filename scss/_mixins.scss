@@ -5,10 +5,10 @@
     align-items: center;
 }
 
-$breakPoints:("small": 450px);
+// $breakPoints:("small": 450px);
 
-@mixin breakPoint($value) {
-    @media (min-width: map-get($map:$breakPoints, $key:$value)) {
-        @content;
-    }
-}
+// @mixin breakPoint($value) {
+//     @media (min-width: map-get($map:$breakPoints, $key:$value)) {
+//         @content;
+//     }
+// }

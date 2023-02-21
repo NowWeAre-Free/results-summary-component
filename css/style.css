@@ -131,6 +131,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .summary__box {
   border-radius: 0.6em;
+  margin-bottom: 1em;
+}
+.summary__score {
+  font-weight: 700;
+}
+.summary__score--max {
+  font-weight: 500;
+  color: hsl(241deg, 100%, 89%);
 }
 
 .reaction {

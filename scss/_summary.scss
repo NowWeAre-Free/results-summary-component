@@ -7,6 +7,14 @@
     }
     &__box {
         border-radius: 0.6em;
+        margin-bottom: 1em;
+    }
+    &__score {
+        font-weight: $fw700;
+        &--max {
+            font-weight: $fw500;
+            color: $light-lavender;
+        }
     }
 }
 .reaction {

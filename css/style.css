@@ -119,6 +119,11 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 
+@media (min-width: 500px) {
+  .result {
+    border-radius: 1.5rem;
+  }
+}
 .summary {
   padding: 1.5em;
   width: 100%;
@@ -136,7 +141,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .summary__box--flex {
   display: flex;
-  gap: 10px;
 }
 .summary__score {
   font-weight: 700;
@@ -186,6 +190,29 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .continue-btn:hover {
   background: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+}
+
+@media (min-width: 500px) {
+  .summary {
+    border-radius: 1.5rem;
+  }
+  .summary__box {
+    margin-bottom: 0.8em;
+  }
+}
+.card {
+  max-height: 420px;
+}
+
+@media (min-width: 500px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1.5rem;
+    max-width: 600px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

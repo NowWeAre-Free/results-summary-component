@@ -119,7 +119,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 520px) {
   .result {
     border-radius: 1.5rem;
     padding: 2.1rem;
@@ -209,7 +209,20 @@ p, h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
 }
 
-@media (min-width: 500px) {
+@media (max-width: 240px) {
+  .summary__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .summary__box--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+}
+@media (min-width: 520px) {
   .summary {
     border-radius: 1.5rem;
     padding: 1.5rem 1.5rem 2.5rem 1.5rem;
@@ -224,15 +237,6 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 1.5rem;
   }
 }
-@media (max-width: 240px) {
-  .summary__box {
-    display: flex;
-    flex-direction: column;
-  }
-  .summary__box--flex {
-    display: block;
-  }
-}
 .card {
   display: flex;
   flex-direction: column;
@@ -240,7 +244,7 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 520px) {
   .card {
     display: flex;
     flex-direction: row;

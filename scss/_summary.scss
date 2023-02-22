@@ -1,4 +1,5 @@
 @use './var'as *;
+@use './mixins' as *;
 
 .summary {
     padding: 1.5rem;
@@ -15,6 +16,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.7rem;
+
         &--flex {
             display: flex;
             gap: 10px;
@@ -33,6 +35,7 @@
 
 .reaction {
     background-color: hsla(hue($red), saturation($red), lightness($red), 0.1);
+
     &__left-label {
         color: $red;
     }
@@ -40,6 +43,7 @@
 
 .memory {
     background-color: hsla(hue($yellow), saturation($yellow), lightness($yellow), 0.1);
+
     &__left-label {
         color: $yellow;
     }
@@ -47,6 +51,7 @@
 
 .verbal {
     background-color: hsla(hue($green), saturation($green), lightness($green), 0.1);
+
     &__left-label {
         color: $green;
     }
@@ -54,6 +59,7 @@
 
 .visual {
     background-color: hsla(hue($blue), saturation($blue), lightness($blue), 0.1);
+
     &__left-label {
         color: $blue;
     }
@@ -68,34 +74,41 @@
     background-color: $dark-gray-blue;
     color: $white;
     text-decoration: none;
+
     &:hover {
-        background: linear-gradient(to bottom, $light-slate-blue-bg, $light-royal-blue-bg);    }
+        background: linear-gradient(to bottom, $light-slate-blue-bg, $light-royal-blue-bg);
+    }
 }
 
-@media (min-width: 500px) {
+@media (max-width: 240px) {
+    .summary {
+        &__box {
+            display: flex;
+            flex-direction: column;
+
+            &--flex {
+                @include flex-center;
+                gap: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 520px) {
     .summary {
         border-radius: 1.5rem;
         padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+
         &__title {
             padding: 0 0 .8rem 0;
         }
+
         &__box {
             margin-bottom: .8rem;
         }
     }
+
     .continue-btn {
         margin-top: 1.5rem;
-    }
-}
-
-@media (max-width: 240px){
-    .summary {
-        &__box{
-            display: flex;
-            flex-direction: column;
-            &--flex {
-                display: block;
-            }
-        }
     }
 }

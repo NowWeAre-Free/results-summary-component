@@ -224,6 +224,15 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 1.5rem;
   }
 }
+@media (max-width: 240px) {
+  .summary__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .summary__box--flex {
+    display: block;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;

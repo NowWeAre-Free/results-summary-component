@@ -89,7 +89,7 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
-  border-radius: 100%;
+  border-radius: 50%;
   width: 120px;
   height: 120px;
   line-height: 1.2;
@@ -122,6 +122,21 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (min-width: 500px) {
   .result {
     border-radius: 1.5rem;
+    padding: 1.5rem;
+  }
+  .result__header {
+    margin: 0;
+  }
+  .result__score {
+    width: 150px;
+    height: 150px;
+    margin: 1.5rem 0;
+  }
+  .result__description-title {
+    font-size: 28px;
+  }
+  .result__description-text {
+    margin: 0.2rem 0.5rem 0.7rem 0.4rem;
   }
 }
 .summary {
@@ -141,6 +156,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .summary__box--flex {
   display: flex;
+  gap: 10px;
 }
 .summary__score {
   font-weight: 700;
@@ -201,7 +217,10 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .card {
-  max-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 500px) {
